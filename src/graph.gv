@@ -1,0 +1,136 @@
+digraph G{
+n4 [label="v / 0000"]
+
+n7 [label="m / 00010"]
+
+n13 [label="c / 000110000"]
+
+n15 [label="a / 000110001"]
+
+n12 [label="ca / 00011000"]
+n12->n13
+n12->n15
+
+n17 [label="u / 00011001"]
+
+n11 [label="cau / 0001100"]
+n11->n12
+n11->n17
+
+n19 [label="h / 0001101"]
+
+n10 [label="cauh / 000110"]
+n10->n11
+n10->n19
+
+n24 [label="b / 000111000"]
+
+n26 [label="x / 000111001"]
+
+n23 [label="bx / 00011100"]
+n23->n24
+n23->n26
+
+n28 [label="d / 00011101"]
+
+n22 [label="bxd / 0001110"]
+n22->n23
+n22->n28
+
+n30 [label="q / 0001111"]
+
+n21 [label="bxdq / 000111"]
+n21->n22
+n21->n30
+
+n9 [label="cauhbxdq / 00011"]
+n9->n10
+n9->n21
+
+n6 [label="mcauhbxdq / 0001"]
+n6->n7
+n6->n9
+
+n3 [label="vmcauhbxdq / 000"]
+n3->n4
+n3->n6
+
+n33 [label="i / 0010"]
+
+n36 [label="e / 00110"]
+
+n39 [label="f / 001110"]
+
+n42 [label="o / 0011110"]
+
+n47 [label="p / 0011111000"]
+
+n49 [label="g / 0011111001"]
+
+n46 [label="pg / 001111100"]
+n46->n47
+n46->n49
+
+n51 [label="j / 001111101"]
+
+n45 [label="pgj / 00111110"]
+n45->n46
+n45->n51
+
+n53 [label="s / 00111111"]
+
+n44 [label="pgjs / 0011111"]
+n44->n45
+n44->n53
+
+n41 [label="opgjs / 001111"]
+n41->n42
+n41->n44
+
+n38 [label="fopgjs / 00111"]
+n38->n39
+n38->n41
+
+n35 [label="efopgjs / 0011"]
+n35->n36
+n35->n38
+
+n32 [label="iefopgjs / 001"]
+n32->n33
+n32->n35
+
+n2 [label="vmcauhbxdqiefopgjs / 00"]
+n2->n3
+n2->n32
+
+n55 [label="t / 01"]
+
+n1 [label="vmcauhbxdqiefopgjst / 0"]
+n1->n2
+n1->n55
+
+n58 [label="y / 10"]
+
+n62 [label="r / 1100"]
+
+n64 [label="n / 1101"]
+
+n61 [label="rn / 110"]
+n61->n62
+n61->n64
+
+n66 [label="l / 111"]
+
+n60 [label="rnl / 11"]
+n60->n61
+n60->n66
+
+n57 [label="yrnl / 1"]
+n57->n58
+n57->n60
+
+n0 [label="vmcauhbxdqiefopgjstyrnl / "]
+n0->n1
+n0->n57
+
+}
